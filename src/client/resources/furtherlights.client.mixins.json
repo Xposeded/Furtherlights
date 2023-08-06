@@ -1,9 +1,9 @@
 {
 	"required": true,
-	"package": "com.example.mixin",
+	"package": "aitirava.furtherlights.client.mixins",
 	"compatibilityLevel": "JAVA_17",
-	"mixins": [
-		"ExampleMixin"
+	"client": [
+		"DefaultClientMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
