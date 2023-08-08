@@ -1,11 +1,18 @@
 {
-	"required": true,
-	"package": "aitirava.furtherlights.server.mixins",
-	"compatibilityLevel": "JAVA_17",
-	"mixins": [
-		"DefaultServerMixin"
-	],
-	"injectors": {
-		"defaultRequire": 1
+  "required": true,
+  "package": "aitirava.furtherlights.server.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "DefaultServerMixin",
+    "world.chunk.light.ChunkBlockLightProviderAccessor",
+    "world.chunk.light.ChunkBlockLightProviderInvoker",
+    "world.chunk.light.ChunkBlockLightProviderMixin",
+    "world.chunk.light.ChunkLightProviderAccessor",
+    "world.chunk.light.ChunkLightProviderInvoker",
+    "world.chunk.light.ChunkLightProviderMixin",
+    "world.chunk.light.LightStorageInvoker"
+  ],
+  "injectors": {
+    "defaultRequire": 1
 	}
 }
