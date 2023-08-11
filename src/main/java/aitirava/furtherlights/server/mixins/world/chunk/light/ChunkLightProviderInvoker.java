@@ -13,10 +13,11 @@ public interface ChunkLightProviderInvoker {
     @Invoker("getStateForLighting")@Mutable
     BlockState invokerGetStateForLighting(BlockPos pos);
 
+    @Invoker("method_51565")
+    void invokerQueueForLightDarkening(long blockPos, long flags);
 
     @Invoker("method_51566")
-    void invokerMethod_51566(long blockPos, long flags);
-
+    void invokerQueueForLightEnlightening(long blockPos, long flags);
 
     @Invoker("isTrivialForLighting")
     static boolean invokeIsTrivialForLighting(BlockState blockState) {

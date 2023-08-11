@@ -12,4 +12,8 @@ public interface ChunkLightProviderAccessor {
     @Mutable
     LightStorage<?> getLightStorage();
 
+    @Accessor
+    @Mutable
+    long getField_44731();
+
 }

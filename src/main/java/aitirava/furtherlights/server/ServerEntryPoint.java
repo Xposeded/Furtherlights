@@ -2,6 +2,7 @@ package aitirava.furtherlights.server;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.minecraft.util.math.MathHelper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -17,6 +18,8 @@ public class ServerEntryPoint implements ModInitializer {
         // However, some things (like resources) may still be uninitialized.
         // Proceed with mild caution.
 
-        LOGGER.info("***FurtherLights initialized in server!***");
+        LOGGER.info("***FurtherLights initialized in server!***" +
+                (1 + MathHelper.floorLog2(MathHelper.smallestEncompassingPowerOfTwo(30000000)) )
+        );
     }
 }
